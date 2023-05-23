@@ -19,6 +19,7 @@
 						{{ if lt $next_heading $prev_heading }}
 							{{ range seq (sub $prev_heading $next_heading) }}
 								</ul>
+							</li>
 							{{ end }}
 						{{ end }}
 						{{ if gt $next_heading $prev_heading }}
@@ -27,7 +28,6 @@
 									<ul class="collapse" data-toggle="collapse">
 								{{ else }}
 								<li>
-									test
 									<ul>
 								{{ end }}
 							{{ end }}
