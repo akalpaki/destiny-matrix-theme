@@ -5,8 +5,8 @@
     <a class="a-block nav-head false" href="{{ "" | absLangURL }}">
     {{ end }}
         <div class="nav-title">
-            {{partial "logo" .}}
-            {{.Site.Title}}
+            {{ partial "logo" . }}
+            <!--- { .Site.Title }} -->
         </div>
         {{ with .Site.Params.subtitle }}
         <div class="nav-subtitle">
