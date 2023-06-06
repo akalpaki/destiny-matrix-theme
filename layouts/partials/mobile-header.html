@@ -63,7 +63,8 @@
 <div class="single-column-header-container" id="pageHead"
      v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
     <a href="{{ "" | absLangURL }}">
-        <div class="single-column-header-title">{{.Site.Title}}</div>
+        <!-- <div class="single-column-header-title">{{.Site.Title}}</div> -->
+        <img src="/insight02-white.png" alt="">
         {{ with .Site.Params.subtitle }}
         <div class="single-column-header-subtitle">{{.}}</div>
         {{ end }}
