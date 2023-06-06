@@ -1,9 +1,4 @@
 <div id="sideContainer" class="side-container">
-    {{ if eq .Title .Site.Title}}
-    <a class="a-block nav-head active" href="{{ "" | absLangURL }}">
-    {{ else }}
-    <a class="a-block nav-head false" href="{{ "" | absLangURL }}">
-    {{ end }}
         <div class="nav-title">
             {{ partial "logo.html" . }}
         </div>
