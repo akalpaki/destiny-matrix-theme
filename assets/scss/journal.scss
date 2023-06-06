@@ -446,6 +446,10 @@ a {
       font-size: $nav-title-size;
       line-height: $nav-title-size * 1.4;
       width: fit-content;
+      .nav-logo {
+        width: 200px;
+        height: 75px;
+      }
     }
     border-right: 2px solid transparent;
     .nav-subtitle {
