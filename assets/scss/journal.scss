@@ -442,12 +442,10 @@ a {
     cursor: pointer;
     margin-bottom: 10px;
     color: $deep-dark-accent;
-    .nav-logo {
-     width: fit-content; 
-    }
     .nav-title {
       font-size: $nav-title-size;
       line-height: $nav-title-size * 1.4;
+      width: fit-content;
     }
     border-right: 2px solid transparent;
     .nav-subtitle {
