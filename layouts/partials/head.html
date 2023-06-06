@@ -73,7 +73,7 @@
 
 {{ if not .Site.Params.disableDarkmode }}
 {{ $darkmode := resources.Get "scss/dark-mode.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $darkmode.RelPermalink }}" integrity="{{ $darkmode.Data.Integrity }}" ="screen">
+<link rel="stylesheet" href="{{ $darkmode.RelPermalink }}" integrity="{{ $darkmode.Data.Integrity }}" media="screen">
 {{ else }}
 {{ $styles := resources.Get "scss/journal.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
